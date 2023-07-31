@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.temp-green {
+  color: green;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000e0;
+  color: #eeeeee;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+}
+
+/* START OF TITLE PAGE*/
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+  width: 600px;
+  height: 600px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(252, 252, 252, 0.8);
+  margin-bottom: 30px;
+}
+
+#startGameButton button {
+  display: inline-block;
+  margin-top: 50%;
+  font-size: 20px;
+}
+
+/* END OF TITLE PAGE*/
+
+main {
+  display: none;
+}
+
+#homeSettings {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+button {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  background-color: #eeeeee;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+#homeSettings button {
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #aaaaaa;
+}
+
+/* Character profile */
+.character {
+  display: flex;
+  align-items: flex-end;
+}
+
+.charProfile {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #eeeeee;
+  position: relative;
+}
+
+.charProfile img {
+  width: 100%;
+  height: 85%;
+}
+
+.charProfile .charName {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eeeeee;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Character information */
+.charInformation {
+  width: calc(100% - 150px);
+  height: 200px;
+  border: 1px solid white;
+  margin-left: 5px;
+  vertical-align: top;
+}
+
+.charInformation ul {
+  list-style-type: none;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.charInformation li {
+  align-items: center;
+  font-size: 20px;
+}
+
+/* Stats overview */
+#statsOverview {
+ 
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  border: 1px solid white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#statsOverview h2 {
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #222222;
+  background-color: #dddddd;
+}
+
+#statsView ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+}
+
+#statsView li {
+  display: flex;
+  font-size: 20px;
+}
+
+#statsView li span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Stat modifiers */
+#statModifiers {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 10px;
+}
+
+#statModifiers ul {
+  list-style-type: none;
+}
+
+#statModifiers li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*make the buttons align perfectly*/
+  margin-bottom: 15px;
+  font-size: 20px;
+  white-space: nowrap;
+  /* prevent word wrapping*/
+}
+
+#statModifiers span {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#statModifiers .buttons {
+  display: flex;
+  margin-right: 10px;
+}
+
+#statModifiers .buttons button {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#availablePoints {
+  font-size: 20px;
+  color: #8fd1eb;
+  margin-top: -10px;
+}
+
+#statsConfirm {
+  margin-bottom: 20px;
+}
+
+#gameView {
+  display: none;
+  border: 1px solid white;
+  margin-top: 10px;
+  width: 100%;
+  height: 500px;
+}
+
+#gameStory {
+  font-size: 20px;
+  margin: 20px;
+}
+
+#storySelection {
+  margin-left: 20px;
+}
+
+
+@media (max-width: 1600px) {
+   body {
+    -ms-zoom: 0.8;
+    zoom: 0.8;
+  }
+}
