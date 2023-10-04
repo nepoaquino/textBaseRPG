@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #1d1c1c;
+  height: 100%;
 }
 
 /* START OF TITLE PAGE*/
@@ -22,11 +23,11 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  border: 1px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   width: 750px;
-  height: 95vh;
   overflow-y: hidden;
   overflow-x: hidden;
+  height: 100%;
 }
 
 h1 {
